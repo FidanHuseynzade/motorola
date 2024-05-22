@@ -1,0 +1,34 @@
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.container.custom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .col-xl-3,
+        .col-sm-6,
+        .col-12 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+
+            img {
+                width: 250px;
+                max-width: 300px;
+                height: auto;
+                object-fit: contain;
+                background-color: #f8f8f8;
+                border-radius: 8px;
+            }
+        }
+    }
+}

@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+    z-index: 1000;
+
+    .logo {
+        img {
+            height: 45px;
+        }
+    }
+
+    .page {
+        display: flex;
+        gap: 20px;
+
+        a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: #007bff;
+            }
+        }
+    }
+
+    .social {
+        display: flex;
+        gap: 10px;
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 35px;
+            height: 35px;
+            border: none;
+            border-radius: 50%;
+            background-color: #f0f0f0;
+            color: #333;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+
+            &:hover {
+                background-color: #007bff;
+                color: #fff;
+            }
+
+            &.fb {
+                background-color: #3b5998;
+                color: #fff;
+
+                &:hover {
+                    background-color: #2d4373;
+                }
+            }
+
+            &.ig {
+                background-color: #e1306c;
+                color: #fff;
+
+                &:hover {
+                    background-color: #a12251;
+                }
+            }
+
+            &.ln {
+                background-color: #0077b5;
+                color: #fff;
+
+                &:hover {
+                    background-color: #005582;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 10px;
+
+        .social {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 300px) {
+    .navbar {
+        align-items: center;
+
+        .page {
+            flex-direction: column;
+            width: 100%;
+            font-size: 12px;
+
+
+            a {
+                padding: 10px 0;
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+}

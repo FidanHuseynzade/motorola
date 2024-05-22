@@ -1,0 +1,68 @@
+.footer {
+    background-color: #21253d;
+    color: white;
+    padding: 50px 0;
+
+    h2 {
+        font-family: "Libre Baskerville";
+        color: white;
+    }
+
+    p {
+        font-family: "Quicksand", sans-serif;
+        color: white;
+    }
+
+    .second {
+        .container {
+            .row {
+                .col-12 {
+                    padding: 15px auto;
+
+                    input {
+                        border: none;
+                        border-bottom: 1px solid white;
+                        background: transparent;
+                        color: white;
+
+                        ::placeholder {
+                            color: white;
+                        }
+                    }
+
+                    button {
+                        border: none;
+                        background-color: transparent;
+                        font-family: "Quicksand", sans-serif;
+                        font-weight: bolder;
+                        border-bottom: 1px solid white;
+                        color: white;
+                        cursor: pointer;
+
+                        &:hover {
+                            color: #ddd;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .third {
+        border-top: 1px solid #EAEAEA;
+        text-align: center;
+        padding: 10px 0;
+        color: white;
+
+        a {
+            text-decoration: none;
+            color: #4c9efa;
+        }
+    }
+}
+
+@media (max-width: 450px) and (min-width: 300px) {
+    .touch {
+        margin-top: 25px;
+    }
+}
