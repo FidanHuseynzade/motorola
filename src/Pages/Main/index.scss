@@ -1,6 +1,7 @@
 .mySwiper {
   position: relative;
 
+
   .swiper-slide {
     img {
       width: 100%;
@@ -17,6 +18,9 @@
       font-weight: bold;
       text-align: left;
       padding: 20px;
+      font-family: "Ubuntu", sans-serif;
+      font-weight: 400;
+      font-style: normal;
 
       p {
         color: white;
@@ -42,7 +46,6 @@
 
       h2 {
         color: white;
-        font-family: "Libre Baskerville", serif;
         font-size: 55px;
 
         @media (max-width: 1200px) {
