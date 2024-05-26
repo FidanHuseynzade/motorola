@@ -8,7 +8,9 @@ const Navbar = () => {
     return (
         <div className='navbar'>
             <div className="logo">
-                <img src="https://www.telecominvest.az/assets/front/img/logos/logo.png" alt="Logo" />
+                <Link to="/">
+                    <img src="https://www.telecominvest.az/assets/front/img/logos/logo.png" alt="Logo" />
+                </Link>
             </div>
             <div className="page">
                 <Link to={"/"}>
